@@ -1,0 +1,112 @@
+.faqs-page-main-wrapper {
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+
+/* .faqs-page-main-second-col-wrapper {
+  height: 100vh;
+  position: static;
+  left: auto;
+  overflow-y: scroll;
+} */
+.unordered-list-faqs-page {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.faqs-page-sidebar-wrapper {
+  max-width: 325px;
+  background-color: #26377a0f;
+  padding: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  left: auto;
+}
+
+.faqs-page-links-wraper-list {
+  margin-top: 1rem;
+}
+
+.faqs-page-links-wraper-list > a {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #707177;
+}
+
+.faqs-API-documentation-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.faqs-faqs-main-heading {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.faqs-page-Table-Content-heading > h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+  color: #111827;
+}
+
+.faqs-page-link-list {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.faqs-page-link-list > p > a {
+  padding-left: 0.375em;
+  text-decoration: underline !important;
+  font-weight: 500;
+  color: #410cd9;
+  margin-bottom: 12px;
+}
+
+.faqs-page-unordered-list {
+  margin-bottom: 3rem;
+}
+
+.faqs-page-second-col-main-wrapper {
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .faqs-page-sidebar-wrapper {
+    max-width: 100%;
+  }
+  .faqs-faqs-main-heading {
+    font-size: 36px;
+  }
+  .FAQS-PAGE-loom-link {
+    display: none;
+  }
+  u {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .faqs-page-second-col-main-wrapper {
+    margin-bottom: 0rem;
+  }
+
+  .faqs-page-main-second-col-wrapper {
+    padding-top: 40px;
+  }
+  /* .faqs-page-main-wrapper {
+    overflow-x: hidden;
+  } */
+  /* .faqs-page-main-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    flex-direction: column;
+
+  } */
+}

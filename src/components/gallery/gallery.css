@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery-container-wrapper {
+  margin-top: 24px;
+}
+
+.gallery-top-search-tooltip {
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.gallery-top-search-tooltip > h3 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+}
+
+.gallery-top-search-tooltip > p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+}
+
+.gallery-top-search {
+  position: fixed;
+  top: 20px;
+  left: 21%;
+  z-index: 9999;
+  width: 75%;
+}
+
+.gallery-top-search-input {
+  width: 100%;
+  background-color: #e5e7eb;
+  padding: 16px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  border: none;
+}
+
+.gallery-sidebar-wrapper {
+  min-height: 100vh;
+  padding: 16px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px;
+}
+
+.gallery {
+  column-count: 4;
+  --webkit-column-count: 4;
+  --moz-column-count: 4;
+  gap: 1rem;
+  padding: 4rem;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  background-color: black;
+  margin-bottom: 8px;
+}
+.hover {
+  opacity: 0.7;
+  background-color: black;
+}
+
+.hover-effect > h1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+
+  border-radius: 0.75rem;
+  color: white;
+}
+
+.hover-effect {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+/* CSS */
+
+.image img {
+  height: auto;
+  width: 100%;
+}
+
+.side-bar-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+/* Responsive-ness for different screen-sizes */
+@media screen and (max-width: 810px) {
+  .gallery {
+    column-count: 3;
+    --webkit-column-count: 3;
+    --moz-column-count: 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 2;
+    --webkit-column-count: 2;
+    --moz-column-count: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery {
+    column-count: 1;
+    --webkit-column-count: 1;
+    --moz-column-count: 1;
+  }
+}

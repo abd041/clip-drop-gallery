@@ -1,0 +1,59 @@
+.lainding-review-main-image > img {
+  max-width: 150px;
+}
+
+.lainding-review-main-haeding > h1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  color: black;
+}
+
+.lainding-review-main-para-text > p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #707177;
+}
+
+.lainding-review-main-customer-image > img {
+  width: 50px;
+  height: 50px;
+}
+
+.lainding-review-main-customer-heading > h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #000;
+}
+
+.lainding-review-main-customer-job > h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #707177;
+}
+
+.lainding-review-main-image-wrapper {
+  background-color: #f2f3f7;
+  border-radius: 18px;
+  padding: 16px 24px;
+  margin-bottom: 32px;
+}
+
+.lainding-review-main-haeding {
+  margin-bottom: 16px;
+}
+
+.lainding-review-main-para-text {
+  margin-bottom: 16px;
+}
+
+.lainding-review-main-customer {
+  margin-bottom: 16px;
+}
+
+.lainding-review-main-customer-heading-wrapper{
+    margin-left: 16px;
+}

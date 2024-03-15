@@ -1,0 +1,148 @@
+.industry-review-heading > h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.72px;
+  color: black;
+}
+
+.industry-review-heading {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.industry-video-main-wrapper {
+  margin-bottom: 80px;
+}
+.industry-review-heading {
+  max-width: 1072px;
+  text-align: center;
+}
+
+.industry-review-video-main-wrapper {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  max-width: 384px;
+  background-color: #000000;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+
+.industry-review-video-main-wrapper-playing {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  max-width: 384px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 18px;
+}
+
+.industry-review-video-main-wrapper-landing {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  max-width: 100%;
+  background-color: #000000;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+
+.industry-review-video-main-wrapper-playing-landing {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  max-width: 100%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 18px;
+}
+
+.industry-review-video {
+  outline-style: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  opacity: 0.5;
+}
+
+.industry-review-video-main {
+  outline-style: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  opacity: 1;
+}
+.industry-review-video-main-landing {
+  outline-style: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  opacity: 1;
+}
+
+.industry-button-video {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@media (min-width: 640px) {
+  .industry-review-video-main-wrapper {
+    max-width: 32rem;
+  }
+  .industry-review-video-main-wrapper-playing {
+    max-width: 32rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .industry-review-video-main-wrapper {
+    max-width: 792px;
+  }
+  .industry-review-video-main-wrapper-playing {
+    max-width: 792px;
+  }
+}
+
+@media (max-width: 768px) {
+  .industry-review-heading {
+    font-size: 36px;
+  }
+  .industry-review-heading > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.72px;
+    color: black;
+  }
+
+  .industry-review-heading {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .industry-video-main-wrapper {
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,117 @@
+.visual-main-wrapper {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 60rem;
+}
+
+.visual-second-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.visual-text-main-wrapper {
+  margin-bottom: 4rem;
+  color: #1f2937;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.visual-links-wrapper {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .visual-links-wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .visual-links-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .visual-links-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.visual-links-wrapper-main {
+  display: flex;
+  position: relative;
+  background-color: #e5e7eb;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20rem;
+  border-radius: 1.5rem;
+}
+
+.visual-video-wrapper-main {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #6b7280;
+  width: 100%;
+  height: 13rem;
+  border-radius: 1.5rem;
+}
+
+.visual-video-tag- {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-primary-100 {
+  background-color: #1f2937;
+}
+
+.visualsection-cards-heading {
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.visualssection-main-card-wrapper {
+  display: flex;
+  padding: 1.5rem;
+  color: #374151;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.visualssection-second-card-wrapper {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.visualssection-description-card-wrapper {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+}

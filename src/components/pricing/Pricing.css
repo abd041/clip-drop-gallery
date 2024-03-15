@@ -1,0 +1,120 @@
+.pricing-list-wrapper {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.pricing-section{
+  margin-top: 200px;
+}
+
+.pricing-list-wrapper > li > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #00a60f;
+}
+
+.pricing-list-wrapper > li {
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 14px;
+  gap: 0.75rem;
+  margin-bottom: 16px;
+}
+
+.cards-main-wrapper {
+  border-radius: 18px;
+  border: 2px solid #d9dae0;
+  /* padding: 2rem; */
+}
+
+.card-main-btn-wrapper {
+  color: #410cd9;
+  padding-top: 6.5px;
+  padding-bottom: 7.5px;
+  background-color: #f68efe33;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 16px;
+
+}
+
+.Card-main-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 16px;
+  margin-top: 16px;
+
+}
+
+.Card-main-heading-dollars {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+
+.Card-main-heading-Preview {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #707177;
+  margin-bottom: 16px;
+}
+
+.sign-up-btn {
+  outline: 2px solid #0000;
+  outline-offset: 2px;
+  color: white;
+  font-size: 17px;
+  background-color: #410cd9;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  height: 56px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.card-bottom-section-wrapper{
+  background-color: #f2f3f7;
+  padding: 2rem;
+}
+
+.card-upper-section-wrapper{
+  padding: 2rem;
+}
+
+.card-bottom-section-wrapper > span{
+  margin-bottom: 16px;
+}
+
+.card-bottom-section-wrapper-lats{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.pricing-list-wrapper > td {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 14px;
+  gap: 0.75rem;
+  margin-bottom: 16px;
+}
+
+.pricing-list-wrapper > td > span {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 12px;
+  gap: 0.75rem;
+  margin-bottom: 16px;
+}
+
+

@@ -1,0 +1,222 @@
+.wrap-hero-section {
+  background-color: rgb(229, 231, 235);
+}
+
+.hero-section-main-container {
+  padding: 0 64px;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section-heading-image > img {
+  width: 28px;
+  height: 28px;
+}
+
+.hero-section-heading > h6 {
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #2c2c2c;
+}
+
+.hero-section-main-heading > h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #2c2c2c;
+  text-align: left;
+}
+
+.hero-section-main-heading {
+  margin-bottom: 16px;
+}
+
+.hero-section-description {
+  margin-bottom: 34px;
+  text-align: left;
+}
+
+.hero-section-description > p {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: #2c2c2c;
+}
+
+.hero-section-desc-btn > button {
+  border-radius: 20px;
+  min-height: 40px;
+  padding: 0 18px;
+  background-color: #1473e6;
+  border-color: #1473e6;
+  color: #fff;
+}
+
+.hero-section-animation-image > img {
+  max-width: 100%;
+  border-radius: 16px;
+  max-height: auto;
+  max-width: 727px;
+  width: 90%;
+}
+
+.hero-section-animation-main-wrapper {
+  position: relative;
+}
+
+.hero-section-animation-text {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 17px 16px 15px 16px;
+  min-width: 190px;
+  border-radius: 5px;
+}
+
+/* .hero-section-btn-image{
+    margin-right: 16px;
+} */
+
+.hero-section-btn-image > svg {
+  height: 20px;
+  fill: #000000;
+  width: 20px;
+}
+
+.hero-section-button-main-wrapper {
+  margin-bottom: 12px;
+  width: 100%;
+  min-height: 60px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 23px;
+  padding-left: 8px;
+}
+
+.hero-section-button-main-wrapper-active {
+  margin-bottom: 12px;
+  width: 100%;
+  min-height: 60px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1273e6;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 23px;
+  padding-left: 8px;
+  background-color: #1273e6;
+  color: white;
+}
+
+.hero-section-input-text-main-wrapper {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-section-input-text-form {
+  min-height: 58px;
+  border-radius: 33px;
+  top: 33px;
+  padding: 3px 5px 3px 30px;
+}
+
+.hero-section-input-text-main-button {
+  border-radius: 18px;
+  background-color: #1273e6;
+  border: 1px solid #1273e6;
+  color: white;
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 44px;
+  border-radius: 33px;
+  padding: 0 28px;
+}
+
+.hero-section-input-text-area {
+  min-height: 58px;
+  border-radius: 33px;
+  top: 33px;
+  padding: 3px 5px 3px 0px;
+  outline: none;
+  border: 1px solid white;
+}
+
+.hero-section-input-text-area:focus {
+  border: none;
+  outline: none;
+}
+
+.hero-section-input-text-area::placeholder {
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 44px;
+  border-radius: 33px;
+  padding: 0 28px;
+}
+
+.hero-section-mobile-center {
+  text-align: left;
+  justify-content: start;
+}
+
+@media (max-width: 1199px) {
+  .hero-section-animation-text {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    right: 0;
+    top: 0;
+    margin-top: 72px;
+  }
+  .hero-section-main-container {
+    padding: 20px;
+  }
+  .hero-section-animation-image > img {
+    max-width: 100%;
+
+    width: 100%;
+  }
+
+  .hero-section-button-main-wrapper-active {
+    margin-bottom: 0px;
+    padding: 12px 20px;
+  }
+
+  .hero-section-button-main-wrapper {
+    margin-bottom: 0px;
+    padding: 12px 20px;
+  }
+  .hero-section-main-heading > h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .hero-section-mobile-center {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .hero-section-description {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .hero-section-desc-btn {
+    margin-bottom: 16px;
+  }
+  .wrap-hero-section {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,63 @@
+.stats-main-wrapper {
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 60rem;
+  gap: 2.5rem;
+}
+
+.stats-main-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1 0%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
+  color: black;
+}
+
+.stats-main-items-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stats-main-items-flex-wrapper {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  gap: 0.25rem;
+}
+
+.stats-text-wrapper {
+  color: #4b5563;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+.stats-text-wrapper-users {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.stats-text-wrapper-users-icons {
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
+  opacity: 0.5;
+}

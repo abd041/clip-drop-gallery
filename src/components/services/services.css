@@ -1,0 +1,135 @@
+.services-main-wrapper {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 60rem;
+}
+
+.services-main-wrapper-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.services-main-heading {
+  margin-bottom: 4rem !important;
+  color: #1f2937;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-main-links-wrapper {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .services-main-links-wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .services-main-links-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .services-main-links-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.services-main-main-wrapper {
+  display: flex;
+  position: relative;
+  background-color: #e5e7eb;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20rem;
+  border-radius: 1.5rem;
+}
+
+.services-main-videp-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #6b7280;
+  width: 100%;
+  height: 13rem;
+  border-radius: 1.5rem;
+}
+
+.services-main-video-dimension {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.services-main-clean-dimension {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.services-main-clean-round {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  justify-content: center;
+  border-radius: 9999px;
+  filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07))
+    drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+}
+
+.services-text-styling {
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.services-icons-styling-icos {
+  display: flex;
+  padding: 1.5rem;
+  color: #374151;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.services-icons-div-styling {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.services-line-cllimp {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.services-line-cllimp-backgound {
+  background-color: #1f2937;
+}

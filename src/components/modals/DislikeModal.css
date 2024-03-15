@@ -1,0 +1,204 @@
+.dislike-modal-main-wrapper {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 5rem;
+  z-index: 50;
+}
+
+.dislike-modal-wrapper {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 1px 24px rgba(0, 0, 0, 0.09);
+  padding: 1.5rem;
+  position: relative;
+  width: 415px;
+  max-width: calc(100vw - 40px);
+}
+
+.dislike-modal-wrapper-button {
+  display: flex;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0;
+  background-color: transparent;
+  transition-property: all;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  user-select: none;
+  gap: 0.375rem;
+}
+
+.dislike-modal-wrapper-heading {
+  display: flex;
+  margin-top: 1.25rem;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.dislike-modal-heading-fonts {
+  color: #000000;
+  font-weight: 600;
+  color: 18px;
+}
+
+.dislike-modal-checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dislike-modal-checkbox-fonts {
+  color: black;
+  margin-left: 0.5rem;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.dislike-modal-textHeading-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dislike-modal-textHeading-fonts {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.dislike-modal-non-text-headings {
+  display: block;
+  background-color: #000000;
+  transition-property: background-color, border-color, color, fill, stroke;
+  color: #ffffff;
+  height: 2rem;
+  border-radius: 9999px;
+  width: 8rem;
+}
+
+.dislike-modal-non-text-wrapper {
+  position: absolute;
+  top: 0;
+  background-color: #e5e7eb;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  width: 50%;
+  height: 2rem;
+  border-radius: 9999px;
+  left: -1px;
+}
+
+.dislike-modal-non-text-main-wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0.125rem;
+  transition-property: background-color, border-color, color, fill, stroke;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  user-select: none;
+}
+
+.dislike-modal-oui-text-main-wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-property: background-color, border-color, color, fill, stroke;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  user-select: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.comment-div-main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-label-main-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.custom-textarea {
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: black;
+  outline-color: #2563eb;
+  border-width: 2px;
+  resize: none;
+}
+
+.dislike-custom-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280;
+  position: absolute;
+  bottom: -1.5rem;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.dislike-custom-text-fonts {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280;
+  align-self: flex-end;
+  margin-top: 0.25rem;
+}
+
+.dislike-send-comment {
+  transition-property: all;
+  transition-duration: 0.3s;
+  user-select: none;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  gap: 0.375rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+}

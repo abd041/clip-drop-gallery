@@ -1,0 +1,118 @@
+.faqs-main-wrapper {
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 60rem;
+}
+
+.faqs-heading-wrapper {
+  margin-bottom: 2.5rem !important;
+  color: #1f2937;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .faqs-heading-wrapper {
+    margin-bottom: 5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .faqs-heading-wrapper {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.faqs-details-section-wrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  width: 100%;
+  border-top: 2px solid;
+  border-color: black;
+}
+
+.faqs-summary-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.faqs-summary-icons-wrapper {
+  margin-right: 0.5rem;
+  transition-property: transform;
+  color: #000000;
+  flex-shrink: 0;
+}
+
+.faqs-summary-heading-wrapper {
+  color: #1f2937;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .faqs-summary-heading-wrapper {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .faqs-summary-heading-wrapper {
+    color: 18px;
+  }
+}
+
+.faqs-summary-para-wrapper {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.faqs-summary-upload-wrapper {
+  color: #6b7280;
+}
+
+.faqs-summary-uploadimage-wrapper {
+  color: #000000;
+  opacity: 0.5;
+  margin-left: 32px;
+}
+
+.faqs-summary-iconsplace-wrapper {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  transition-property: all;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  user-select: none;
+  gap: 0.375rem;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.faqs-summary-section-wrapper-hidden {
+  display: none;
+}

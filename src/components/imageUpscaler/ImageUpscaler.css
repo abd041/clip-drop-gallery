@@ -1,0 +1,143 @@
+.upscale-heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.upscale-desc {
+  font-weight: 500px;
+  font-size: 16px;
+}
+
+.box-col-wrapper {
+  background-color: rgb(39 39 42);
+  border-radius: 1.5rem;
+}
+
+.video-upscale {
+  object-fit: cover;
+}
+
+.image-upscaler-main-wrapper {
+  display: flex;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex-direction: column;
+  /* flex: 1 1 0%; */
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .image-upscaler-main-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.image-upscaler-second-wrapper {
+  width: 100%;
+  max-width: 60rem;
+  background-color: black; /* Replace with your desired color */
+  border-radius: 1.5rem; /* Adjust the value to change the roundness of the corners */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  position: relative;
+  height: 10rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .image-upscaler-second-wrapper {
+    flex-direction: row;
+    height: 15rem;
+  }
+}
+@media (min-width: 1024px) {
+  .image-upscaler-second-wrapper {
+    height: 20rem;
+  }
+}
+
+.image-upscaler-style {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .image-upscaler-style {
+    display: inline-block;
+    /* flex: 1 1 0%; */
+    /* flex: 1; */
+  }
+}
+
+.image-upscaler-heading-wrapper {
+  display: flex;
+  /* padding: 2rem; */
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  /* gap: 1rem; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 1;
+  z-index: 1;
+}
+
+.image-upscaler-heading {
+  display: flex;
+  font-size: 52p;
+  line-height: 2.25rem;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* gap: 1rem; */
+  text-align: center;
+}
+
+.image-upscaler-heading-icons {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .image-upscaler-heading-icons {
+    display: inline-block;
+  }
+}
+
+.image-upscaler-heading-enhance {
+  overflow: hidden;
+  /* flex: 1 1 0%; */
+  flex: 1;
+  border-radius: 1.5rem;
+  background-color: black;
+}
+
+.image-upscaler-heading-upscael {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.image-upscaler-source-enhance {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  border-radius: 1.5rem;
+  opacity: 0.5;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .image-upscaler-source-enhance {
+    height: 100%;
+  }
+}
