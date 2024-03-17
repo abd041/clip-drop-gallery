@@ -1,15 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { Images } from "./ImageList";
-import { Link } from "react-router-dom";
-
-const GalleryImages = () => {
-    const [hoveredIndex, setHoveredIndex] = useState(null);
+import React, { useState, useEffect } from "react";
+import { Images } from "../gallery/ImageList";
+import "./GalleryDetail.css";
+import { useParams } from "react-router-dom";
+const GalleryDetail = () => {
+    const [currentImage, setCurrentImage] = useState(0);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
     const [showTooltip, setShowTooltip] = useState(false);
+    const params = useParams();
+    const { id } = params
 
 
+    useEffect(() => {
+        setCurrentImage(id)
+    }, [
+        id
+    ])
 
-
+    const handleImageClick = (ind) => {
+        setCurrentImage(ind);
+    };
 
     const handleMouseMove = (e) => {
         setTooltipPosition({ x: e.clientX, y: e.clientY });
@@ -22,17 +31,16 @@ const GalleryImages = () => {
     const handleMouseLeaveTooltip = () => {
         setShowTooltip(false);
     };
-    const handleMouseEnter = (index) => {
-        console.log(index, "indexindex");
-        setHoveredIndex(index);
-    };
 
-    const handleMouseLeave = () => {
-        setHoveredIndex(null);
+    const handleScroll = (e) => {
+        const { scrollTop, clientHeight, scrollHeight } = e.target;
+        const scrollFraction = scrollTop / (scrollHeight - clientHeight);
+        const newIndex = Math.round((Images.length - 1) * scrollFraction);
+        setCurrentImage(newIndex);
     };
 
     return (
-        <section class="gallery-section-wrap">
+        <section className="position-relative">
             <div
                 className="gallery-top-search"
                 onMouseMove={handleMouseMove}
@@ -67,27 +75,22 @@ const GalleryImages = () => {
                     </div>
                 )}
             </div>
-            {Images?.map((img, i) => {
-                return (
-                    <div class="gallery-image-wrapper" key={i}>
-                        <Link to={`/gallery-detail/${i}`}>
-                            <img
-                                src={img.src}
-                                alt="image"
-                                className={i == hoveredIndex ? "images-hover" : ""}
-                                onMouseEnter={() => handleMouseEnter(i)}
-                                onMouseLeave={handleMouseLeave}
-                            />
-                        </Link>
-
-                        <div className={i == hoveredIndex ? "hover-effect" : "d-none"}>
-                            <h1>{img.title}</h1>
-                        </div>
+            <div className="gallery-right-side-box" style={{ display: "flex", height: "100vh", overflowY: "scroll" }} onScroll={handleScroll}>
+                <div className="gallery-left-side-box">
+                    <div className="gallery-left-side-image">
+                        <img src={Images[currentImage].src} alt="image" />
                     </div>
-                );
-            })}
+                </div>
+                <div className="gallery-side-images-main">
+                    {Images?.map((img, i) => (
+                        <div className={currentImage === i ? "gallery-side-images-scale" : "gallery-side-images"} key={i}>
+                            <img src={img.src} alt="image" onClick={() => handleImageClick(i)} />
+                        </div>
+                    ))}
+                </div>
+            </div>
         </section>
     );
 };
 
-export default GalleryImages;
+export default GalleryDetail;

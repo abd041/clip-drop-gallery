@@ -12,6 +12,7 @@ import IndustryDetail from "./pages/IndustryDetail";
 import LandingPage from "./pages/LandingPage";
 import Industries from "./pages/Industries";
 import Gallery from "./pages/Gallery";
+import GalleryImageDetail from "./components/gallery/GalleryImageDetail";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/industry" element={<Industries />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery-detail/:id" element={<GalleryImageDetail />} />
       </Routes>
     </Router>
   );
