@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Images } from "../gallery/ImageList";
 import "./GalleryDetail.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 const GalleryDetail = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
     const [showTooltip, setShowTooltip] = useState(false);
     const params = useParams();
     const { id } = params
-
-
+console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPosition.x / window.innerWidth)*100)
+ 
     useEffect(() => {
         setCurrentImage(id)
     }, [
@@ -43,24 +43,32 @@ const GalleryDetail = () => {
         <section className="position-relative">
             <div
                 className="gallery-top-search"
-                onMouseMove={handleMouseMove}
-                onMouseEnter={handleMouseEnterTooltip}
-                onMouseLeave={handleMouseLeaveTooltip}
+              
             >
-                <input
+                <div style={{width:"100%"}}   onMouseMove={handleMouseMove}
+                onMouseEnter={handleMouseEnterTooltip}
+                onMouseLeave={handleMouseLeaveTooltip}>
+                      <input
                     type="text"
                     className="gallery-top-search-input"
                     disabled
                     placeholder="Imagine... (coming soon)"
-                />
+                    />
+                </div>
                 {showTooltip && (
                     <div
                         className="gallery-top-search-tooltip"
                         style={{
                             position: "absolute",
-                            left: tooltipPosition.x - 300,
-                            top: tooltipPosition.y,
+                            left:
+                                tooltipPosition.x > window.innerWidth - 500
+                                    ? tooltipPosition.x - 700 // If tooltip position + 300px exceeds window width, set 'left' to 'auto'
+                                    : tooltipPosition.x - 300, // Otherwise, set 'left' to tooltipPosition.x
+                
+                            top: tooltipPosition.y + "px",
                         }}
+                        
+                        
                     >
                         <h3>Lorem Ismum</h3>
                         <p>
@@ -74,11 +82,35 @@ const GalleryDetail = () => {
                         </p>
                     </div>
                 )}
+                <div className="gallery-top-search-right">
+                    <div className="cross-icon">
+                        <Link to="/gallery">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" height="18" class=" shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+
+                        </Link>
+                    </div>
+                </div>
             </div>
+
             <div className="gallery-right-side-box" style={{ display: "flex", height: "100vh", overflowY: "scroll" }} onScroll={handleScroll}>
                 <div className="gallery-left-side-box">
                     <div className="gallery-left-side-image">
                         <img src={Images[currentImage].src} alt="image" />
+                    </div>
+                </div>
+                <div className="gallery-left-side-box-text">
+                    <div className="gallery-left-side-image-box">
+                        <div className="galley-box-title">
+                            <h1>hello world</h1>
+                        </div>
+                        <div className="galley-box-title">
+                            <p>
+                            vector drawing of a saturated black and white cute cat with big eyes on a white background, in the style of "Manu" and in a style similar to M frozen, a closeup shot, using simple flat vector shapes
+                            </p>
+                        </div>
+                        <div className="galley-box-title">
+                        <img src={Images[currentImage].src} alt="image" />
+                        </div>
                     </div>
                 </div>
                 <div className="gallery-side-images-main">

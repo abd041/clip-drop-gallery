@@ -7,7 +7,6 @@ const GallerySidebar = () => {
          <div className="gallery-sidebar-wrapper">
             <div>
                 <div class="d-flex align-items-center gap-2">
-
                     <span className="d-none d-lg-block">{HomePageClip}</span>
                     <span>
                         <a

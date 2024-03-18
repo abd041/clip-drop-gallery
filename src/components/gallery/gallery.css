@@ -38,7 +38,26 @@
   left: 21%;
   z-index: 9999;
   width: 75%;
+  display: flex;
+  justify-content: space-between;
 }
+
+.gallery-top-search-right {
+  padding-left: 34px;
+}
+
+.cross-icon{
+  background-color: #e5e7eb;
+    padding: 16px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 16px;
+}
+
+
+
 
 .gallery-top-search-input {
   width: 100%;

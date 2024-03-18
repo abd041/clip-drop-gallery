@@ -50,8 +50,12 @@ const GalleryImages = () => {
                         className="gallery-top-search-tooltip"
                         style={{
                             position: "absolute",
-                            left: tooltipPosition.x - 300,
-                            top: tooltipPosition.y,
+                            left:
+                                tooltipPosition.x > window.innerWidth - 500
+                                    ? tooltipPosition.x - 700 // If tooltip position + 300px exceeds window width, set 'left' to 'auto'
+                                    : tooltipPosition.x - 300, // Otherwise, set 'left' to tooltipPosition.x
+                
+                            top: tooltipPosition.y + "px",
                         }}
                     >
                         <h3>Lorem Ismum</h3>
