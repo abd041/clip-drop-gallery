@@ -92,7 +92,7 @@ console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPo
                 </div>
             </div>
 
-            <div className="gallery-right-side-box" style={{ display: "flex", height: "100vh", overflowY: "scroll" }} onScroll={handleScroll}>
+            <div className="gallery-right-side-box" style={{ display: "flex", height: "100vh", overflowY: "scroll" , paddingTop:"16px"}} onScroll={handleScroll}>
                 <div className="gallery-left-side-box">
                     <div className="gallery-left-side-image">
                         <img src={Images[currentImage].src} alt="image" />
@@ -111,11 +111,16 @@ console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPo
                         <div className="galley-box-title">
                         <img src={Images[currentImage].src} alt="image" />
                         </div>
+                        <div className="gallery-box-text-box">
+                            <div className="gallery-box-text"><h4>chaos <span>12</span></h4></div>
+                            <div className="gallery-box-text"><h4>ar <span>3:4</span></h4></div>
+                            <div className="gallery-box-text"><h4>stylize <span>575</span></h4></div>
+                        </div>
                     </div>
                 </div>
                 <div className="gallery-side-images-main">
                     {Images?.map((img, i) => (
-                        <div className={currentImage === i ? "gallery-side-images-scale" : "gallery-side-images"} key={i}>
+                        <div className={currentImage === i ? "gallery-side-images-scale" : "gallery-side-images"} key={i} >
                             <img src={img.src} alt="image" onClick={() => handleImageClick(i)} />
                         </div>
                     ))}

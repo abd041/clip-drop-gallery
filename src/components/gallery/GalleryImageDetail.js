@@ -8,7 +8,7 @@ const GalleryImageDetail = () => {
         <div style={{height:"100vh" , overflow:"hidden"}}> 
             <Container fluid>
                 <Row className="gallery-container-wrapper">
-                    <Col lg={2}>
+                    <Col lg={2} className="px-0">
                         <GallerySidebar />
                     </Col>
                     <Col lg={10}>

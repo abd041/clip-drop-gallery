@@ -9,7 +9,7 @@ const Gallery = () => {
       <Container fluid>
         <Row className="gallery-container-wrapper">
           <Col lg={2}>
-            <GallerySidebar />
+            <GallerySidebar className="px-0" />
           </Col>
           <Col lg={10}>
             <GalleryImages />
