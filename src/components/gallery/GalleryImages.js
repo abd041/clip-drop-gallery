@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Images } from "./ImageList";
 import { Link } from "react-router-dom";
+import {boxIcon} from "../../data/SVG";
 
 const GalleryImages = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
     const [showTooltip, setShowTooltip] = useState(false);
-
-
+    var timeoutId;
 
 
 
@@ -16,7 +16,7 @@ const GalleryImages = () => {
     };
 
     const handleMouseEnterTooltip = () => {
-        setShowTooltip(true);
+         setShowTooltip(true)
     };
 
     const handleMouseLeaveTooltip = () => {
@@ -54,11 +54,11 @@ const GalleryImages = () => {
                                 tooltipPosition.x > window.innerWidth - 500
                                     ? tooltipPosition.x - 700 // If tooltip position + 300px exceeds window width, set 'left' to 'auto'
                                     : tooltipPosition.x - 300, // Otherwise, set 'left' to tooltipPosition.x
-                
+
                             top: tooltipPosition.y + "px",
                         }}
                     >
-                        <h3>Lorem Ismum</h3>
+                        <h3 className="d-flex"><span style={{width:"16px" , height:"16px" , marginRight:"8px"}}>{boxIcon}</span>Lorem Ismum</h3>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesettino
                             make a type specimen book. It has survived not only five

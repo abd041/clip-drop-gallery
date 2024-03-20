@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Images } from "../gallery/ImageList";
 import "./GalleryDetail.css";
 import { Link, useParams } from "react-router-dom";
+import { boxIcon } from "../../data/SVG";
 const GalleryDetail = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
     const [showTooltip, setShowTooltip] = useState(false);
     const params = useParams();
     const { id } = params
-console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPosition.x / window.innerWidth)*100)
- 
     useEffect(() => {
         setCurrentImage(id)
     }, [
@@ -24,8 +23,9 @@ console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPo
         setTooltipPosition({ x: e.clientX, y: e.clientY });
     };
 
+
     const handleMouseEnterTooltip = () => {
-        setShowTooltip(true);
+        setShowTooltip(true)
     };
 
     const handleMouseLeaveTooltip = () => {
@@ -43,16 +43,16 @@ console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPo
         <section className="position-relative">
             <div
                 className="gallery-top-search"
-              
+
             >
-                <div style={{width:"100%"}}   onMouseMove={handleMouseMove}
-                onMouseEnter={handleMouseEnterTooltip}
-                onMouseLeave={handleMouseLeaveTooltip}>
-                      <input
-                    type="text"
-                    className="gallery-top-search-input"
-                    disabled
-                    placeholder="Imagine... (coming soon)"
+                <div style={{ width: "100%" }} onMouseMove={handleMouseMove}
+                    onMouseEnter={handleMouseEnterTooltip}
+                    onMouseLeave={handleMouseLeaveTooltip}>
+                    <input
+                        type="text"
+                        className="gallery-top-search-input"
+                        disabled
+                        placeholder="Imagine... (coming soon)"
                     />
                 </div>
                 {showTooltip && (
@@ -64,13 +64,13 @@ console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPo
                                 tooltipPosition.x > window.innerWidth - 500
                                     ? tooltipPosition.x - 700 // If tooltip position + 300px exceeds window width, set 'left' to 'auto'
                                     : tooltipPosition.x - 300, // Otherwise, set 'left' to tooltipPosition.x
-                
+
                             top: tooltipPosition.y + "px",
                         }}
-                        
-                        
+
+
                     >
-                        <h3>Lorem Ismum</h3>
+                        <h3 className="d-flex"><span style={{ width: "16px", height: "16px", marginRight: "8px" }}>{boxIcon}</span>Lorem Ismum</h3>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesettino
                             make a type specimen book. It has survived not only five
@@ -92,7 +92,7 @@ console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPo
                 </div>
             </div>
 
-            <div className="gallery-right-side-box" style={{ display: "flex", height: "100vh", overflowY: "scroll" , paddingTop:"16px"}} onScroll={handleScroll}>
+            <div className="gallery-right-side-box" style={{ display: "flex", height: "100vh", overflowY: "scroll", paddingTop: "16px" }} onScroll={handleScroll} >
                 <div className="gallery-left-side-box">
                     <div className="gallery-left-side-image">
                         <img src={Images[currentImage].src} alt="image" />
@@ -105,11 +105,11 @@ console.log(tooltipPosition , "tooltipPosition" , window.innerWidth , (tooltipPo
                         </div>
                         <div className="galley-box-title">
                             <p>
-                            vector drawing of a saturated black and white cute cat with big eyes on a white background, in the style of "Manu" and in a style similar to M frozen, a closeup shot, using simple flat vector shapes
+                                vector drawing of a saturated black and white cute cat with big eyes on a white background, in the style of "Manu" and in a style similar to M frozen, a closeup shot, using simple flat vector shapes
                             </p>
                         </div>
                         <div className="galley-box-title">
-                        <img src={Images[currentImage].src} alt="image" />
+                            <img src={Images[currentImage].src} alt="image" />
                         </div>
                         <div className="gallery-box-text-box">
                             <div className="gallery-box-text"><h4>chaos <span>12</span></h4></div>
