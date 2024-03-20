@@ -35,6 +35,11 @@ const GallerySidebar = () => {
                         </a>
                     </span>
                 </div>
+                <div className='' style={{marginTop:"16px"}}>
+                <button className="sign-in-button side-bar-btn">
+                        <span className="sign-in-btn">Show case</span>
+                    </button>
+                </div>
             </div>
             <div>
                 <div className='position-relative'>

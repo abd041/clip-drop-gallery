@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Images } from "./ImageList";
 import { Link } from "react-router-dom";
-import {boxIcon, settingBtn} from "../../data/SVG";
+import {boxIcon, settingBtn, sidebarPlusIcon} from "../../data/SVG";
 
 const GalleryImages = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -45,12 +45,9 @@ const GalleryImages = () => {
                     disabled
                     placeholder="Imagine... (coming soon)"
                 />
-                    <button className="" style={{
-                        position: "absolute",
-                        left: "96%",
-                        top: "20%",
-                        opacity:"0.5"
-                    }}>{settingBtn}</button>
+                  <button className="imagine-btn-wrapper-first">{sidebarPlusIcon}</button>
+                  
+                    <button className="imagine-btn-wrapper">{settingBtn}</button>
                 {showTooltip && (
                     <div
                         className="gallery-top-search-tooltip"

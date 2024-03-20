@@ -219,6 +219,28 @@
   margin-right: 8px;
 }
 
+.imagine-btn-wrapper{
+  position: absolute;
+  left: 96%;
+  top: 20%;
+  opacity:0.5;
+}
+
+.imagine-btn-wrapper-first{
+  position: absolute;
+  left: 1.5%;
+  top: 20%;
+  opacity:0.5;
+}
+.imagine-btn-wrapper-first>svg{
+ width: 20px;
+ height: 20px;
+}
+
+.gallery-top-search-input::placeholder{
+  padding-left: 3%;
+}
+
 @media screen and (max-width:992px) {
   .gallery-left-side-box{
     width: 70%;
@@ -237,4 +259,15 @@
   .gallery-left-side-box {
     width: 89%;
 }
+
+
+}
+
+@media screen and (max-width : 568px) {
+  .imagine-btn-wrapper{
+    position: absolute;
+    left: 92%;
+    top: 20%;
+    opacity:0.5;
+  }
 }

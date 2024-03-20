@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Images } from "../gallery/ImageList";
 import "./GalleryDetail.css";
 import { Link, useParams } from "react-router-dom";
-import { boxIcon, settingBtn } from "../../data/SVG";
+import { boxIcon, plusIcon, settingBtn, sidebarPlusIcon } from "../../data/SVG";
 const GalleryDetail = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
@@ -54,12 +54,8 @@ const GalleryDetail = () => {
                         disabled
                         placeholder="Imagine... (coming soon)"
                     />
-                    <button className="" style={{
-                        position: "absolute",
-                        left: "96%",
-                        top: "20%",
-                        opacity:"0.5"
-                    }}>{settingBtn}</button>
+                    <button className="imagine-btn-wrapper-first">{sidebarPlusIcon}</button>
+                    <button className="imagine-btn-wrapper">{settingBtn}</button>
                 </div>
 
                 {showTooltip && (
