@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Images } from "../gallery/ImageList";
 import "./GalleryDetail.css";
 import { Link, useParams } from "react-router-dom";
-import { boxIcon } from "../../data/SVG";
+import { boxIcon, settingBtn } from "../../data/SVG";
 const GalleryDetail = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
@@ -45,7 +45,7 @@ const GalleryDetail = () => {
                 className="gallery-top-search"
 
             >
-                <div style={{ width: "100%" }} onMouseMove={handleMouseMove}
+                <div style={{ width: "100%", position: "relative" }} onMouseMove={handleMouseMove}
                     onMouseEnter={handleMouseEnterTooltip}
                     onMouseLeave={handleMouseLeaveTooltip}>
                     <input
@@ -54,7 +54,14 @@ const GalleryDetail = () => {
                         disabled
                         placeholder="Imagine... (coming soon)"
                     />
+                    <button className="" style={{
+                        position: "absolute",
+                        left: "96%",
+                        top: "20%",
+                        opacity:"0.5"
+                    }}>{settingBtn}</button>
                 </div>
+
                 {showTooltip && (
                     <div
                         className="gallery-top-search-tooltip transition-effect"
@@ -64,9 +71,8 @@ const GalleryDetail = () => {
                                 tooltipPosition.x > window.innerWidth - 500
                                     ? tooltipPosition.x - 700 // If tooltip position + 300px exceeds window width, set 'left' to 'auto'
                                     : tooltipPosition.x - 300, // Otherwise, set 'left' to tooltipPosition.x
-
                             top: tooltipPosition.y + "px",
-                
+
                         }}
 
 

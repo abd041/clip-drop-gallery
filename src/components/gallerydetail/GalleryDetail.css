@@ -231,3 +231,10 @@
 .gallery-left-side-box-text{
   display: none;
 }}
+
+@media screen and (max-width : 768px) {
+
+  .gallery-left-side-box {
+    width: 89%;
+}
+}
