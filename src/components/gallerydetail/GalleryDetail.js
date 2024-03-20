@@ -57,7 +57,7 @@ const GalleryDetail = () => {
                 </div>
                 {showTooltip && (
                     <div
-                        className="gallery-top-search-tooltip"
+                        className="gallery-top-search-tooltip transition-effect"
                         style={{
                             position: "absolute",
                             left:
@@ -66,6 +66,7 @@ const GalleryDetail = () => {
                                     : tooltipPosition.x - 300, // Otherwise, set 'left' to tooltipPosition.x
 
                             top: tooltipPosition.y + "px",
+                
                         }}
 
 
