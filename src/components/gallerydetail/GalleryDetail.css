@@ -131,7 +131,7 @@
 
 .gallery-box-text{
   border-radius: 8px;
-  padding: 8px;
+  padding: 4px;
   background-color: #e5e7eb;
   margin-right: 8px;
 }
@@ -148,12 +148,16 @@
 }
 
 .gallery-box-text > h4 > span{
-  font-size: 0.775rem;
+  font-size: 0.700rem;
   line-height: 1.25rem;
   font-weight: 600;
   border-radius: 0.75rem;
   color: black;
 
+}
+
+.gallery-box-text-border{
+  border: 2px solid black;
 }
 
 .help-box-billing-wrap{
@@ -235,6 +239,13 @@
 .imagine-btn-wrapper-first>svg{
  width: 20px;
  height: 20px;
+}
+
+.sidebaricon{
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .gallery-top-search-input::placeholder{

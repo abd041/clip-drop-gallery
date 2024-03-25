@@ -1,5 +1,5 @@
 import React, { useState , useEffect , useRef} from 'react'
-import { HomePageClip, HomePageResponsvieClip, bottomBars, leftIcon, rightIcon } from "../../data/SVG";
+import { HomePageClip, HomePageResponsvieClip, bottomBars, leftIcon, rightIcon, sidebaricon } from "../../data/SVG";
 
 const GallerySidebar = () => {
     const[showHelp ,setShowHelp]=useState(false)
@@ -37,14 +37,14 @@ const GallerySidebar = () => {
                 </div>
                 <div className='' style={{marginTop:"16px"}}>
                 <button className="sign-in-button side-bar-btn">
-                        <span className="sign-in-btn">Show case</span>
+                <span className='sidebaricon'>{sidebaricon}</span>    <span className="sign-in-btn">Show case</span>
                     </button>
                 </div>
             </div>
             <div>
                 <div className='position-relative'>
                     <button className="sign-in-button side-bar-btn">
-                        <span className="sign-in-btn" onClick={()=> setShowHelp(true)}>Help</span>
+                    <span className='sidebaricon'>{sidebaricon}</span>   <span className="sign-in-btn" onClick={()=> setShowHelp(true)}>Help</span>
                     
                     </button>
                     <div className='help-box-wrapper'  ref={helpBoxRef} style={{display :showHelp ? "block":"none"}}>
@@ -73,12 +73,13 @@ const GallerySidebar = () => {
                 </div>
                 <div>
                     <button className="sign-in-button side-bar-btn">
+                    <span className='sidebaricon'>{sidebaricon}</span>
                         <span className="sign-in-btn">Sign In</span>
                     </button>
                 </div>
                 <div>
                     <button className="sign-in-button side-bar-btn">
-                        <span className="sign-in-btn">Sign Up</span>
+                    <span className='sidebaricon'>{sidebaricon}</span> <span className="sign-in-btn">Sign Up</span>
                     </button>
                 </div>
             </div>

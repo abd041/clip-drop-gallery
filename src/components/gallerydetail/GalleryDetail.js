@@ -45,7 +45,7 @@ const GalleryDetail = () => {
                 className="gallery-top-search"
 
             >
-                <div style={{ width: "100%", position: "relative" }} onMouseMove={handleMouseMove}
+                <div className="gallery-top-search-input-wrap" onMouseMove={handleMouseMove}
                     onMouseEnter={handleMouseEnterTooltip}
                     onMouseLeave={handleMouseLeaveTooltip}>
                     <input
@@ -56,6 +56,7 @@ const GalleryDetail = () => {
                     />
                     <button className="imagine-btn-wrapper-first">{sidebarPlusIcon}</button>
                     <button className="imagine-btn-wrapper">{settingBtn}</button>
+               
                 </div>
 
                 {showTooltip && (
@@ -85,7 +86,7 @@ const GalleryDetail = () => {
                         </p>
                     </div>
                 )}
-                <div className="gallery-top-search-right">
+                  <div className="gallery-top-search-right">
                     <div className="cross-icon">
                         <Link to="/gallery">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" height="18" class=" shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -117,7 +118,7 @@ const GalleryDetail = () => {
                         <div className="gallery-box-text-box">
                             <div className="gallery-box-text"><h4>chaos <span>12</span></h4></div>
                             <div className="gallery-box-text"><h4>ar <span>3:4</span></h4></div>
-                            <div className="gallery-box-text"><h4>stylize <span>575</span></h4></div>
+                            <div className="gallery-box-text gallery-box-text-border"><h4>stylize <span>575</span></h4></div>
                         </div>
                     </div>
                 </div>
